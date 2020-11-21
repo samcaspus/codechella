@@ -38,5 +38,14 @@ module.exports.getTweet = async (req, res) => {
     })
 }
 
+module.exports.deleteAll = (req, res) => {
+
+
+    Tweet.collection.drop();
+
+    return res.status(200).json({
+        "success": "all tweets deleted",
+    });
+}
 
 
