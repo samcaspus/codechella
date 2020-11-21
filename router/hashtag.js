@@ -8,6 +8,8 @@ router.post("/create", hashtagController.createTag);
 // router.get('/read/:limit', getTweetLimit);
 router.post('/read', hashtagController.getTag);
 
+router.post('/upvote', hashtagController.upvote);
+router.post('/downvote', hashtagController.downvote);
 
 
 module.exports = router;
