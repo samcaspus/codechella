@@ -18,7 +18,8 @@
   </head>
   <body>
     <style>
-      body {font-family: Arial, Helvetica, sans-serif;}
+      body {font-family: Arial, Helvetica, sans-serif;
+      background-color: black;}
 
       h5{
         font-weight: bold;
@@ -54,7 +55,7 @@
 }
 
 .hashtag{
-  color: black;
+  color: #fefefe;
 }
 /* Modal Content */
 .modal-content {
@@ -85,7 +86,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3" style="border: 0.01px solid #00acee;">
           <h3><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" style="width: 40px; height: 40px;"></h3>
           <h5>#Popular hastags to explore</h5>
           <h6 class="hashtag">#hash1</h6>
@@ -98,7 +99,7 @@
           
          
         </div>
-        <div class="col-sm-5" style="border: 0.01px solid lightgrey;">
+        <div class="col-sm-5" style="border: 0.01px solid #00acee;">
          
        
             <body>
@@ -108,7 +109,7 @@
             <!-- The Modal -->
            
 
-          <h5 style="padding: 5px;">#TwitterEngage      #<%= id %></h5>
+          <h5 style="padding: 15px; margin: 15px;">#TwitterEngage      #<%= id %></h5>
           <h6 class="hashtag">The platform that clears it all</h6>
           <center>
           <video id="localVideo" style="height: 250px;" autoplay muted></video>
@@ -117,9 +118,9 @@
 
 
         </div>
-        <div class="col-sm-3" >
-          <div id="messaegbox" style="overflow: scroll; height: 300px; margin-top: 20px;">
-           <p> hey drop some #messages</p>
+        <div class="col-sm-3" style="border: 0.01px solid #00acee;">
+          <div id="messaegbox" style="overflow: scroll; height: 500px; margin-top: 20px; border: 5px solid black;">
+           <p style="color:  #00acee;"> hey drop some #messages</p>
           </div>
           <!-- <div  style="background-color: grey; padding: 10%; margin: 10px;">
           Popular tweets come here
@@ -132,7 +133,7 @@
                  <div class="commentSection">
                    <div class="contentArea">
                    </div>
-                   <input type="text" id="message" style="width: 100%; padding: 5px;">
+                   <input type="text" id="message" style="width: 100%; padding: 5px; background-color:  #00acee;">
                    <button class="btn btn-info" id="sendMessage" onclick="sendmessage()" style="width: 100%;"> send message</button>
                  </div>
 
@@ -157,7 +158,7 @@ socket.on("connect",()=>{
     socket.on("message",(data)=>{
       if(data.id == `<%=id%>`){
       let element = document.createElement("div");
-      element.setAttribute("style","background-color: grey; padding: 10%; margin: 10px;");
+      element.setAttribute("style","background-color: #00acee; padding: 10%; margin: 10px;");
       element.innerHTML = data.data;
       let messagebox = document.getElementById("messaegbox");
       messagebox.appendChild(element);
