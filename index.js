@@ -20,7 +20,7 @@ const io = require('socket.io')(http);
 
 
 app.use("/", require("./router/"));
-app.use(express.static(path.join(__dirname, "./views/")))
+app.use(express.static(path.join(__dirname, "./views")))
 
 
 
