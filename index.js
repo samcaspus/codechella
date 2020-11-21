@@ -20,9 +20,19 @@ const io = require('socket.io')(http);
 
 
 app.use("/", require("./router/"));
-app.use(express.static(path.join(__dirname, "./views")))
+app.use("/engage/views", express.static(path.join(__dirname, "views")))
 
+io.on('connection', (socket) => {
+    console.log('a user connected', socket.id);
+    socket.on('disconnect', () => {
+        console.log("user has been disconnected", socket.id);
+    })
 
+    socket.on("message", (data) => {
+        io.emit("message", data);
+        console.log(data);
+    })
+});
 
 http.listen(port, (err) => {
     if (err) {
