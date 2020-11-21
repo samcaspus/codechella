@@ -32,6 +32,12 @@ module.exports.getTag = async (req, res) => {
 
     const tag = await Hashtag.findOne({ 'tag': req.body.tag });
     console.log(tag);
+    if (!tag) {
+        return res.status(200).json({
+            "error": "tag not found"
+        });
+    }
+
     return res.status(200).json({
         "success": "tag found",
         "data": tag
@@ -40,3 +46,30 @@ module.exports.getTag = async (req, res) => {
 
 
 
+
+module.exports.upvote = async (req, res) => {
+
+    const { _id } = req.body;
+
+    const obj = await Hashtag.find({ "_id": _id });
+    await Hashtag.findByIdAndUpdate(_id, { 'vote': parseInt(obj[0].vote) + 1 });
+
+    return res.status(200).json({
+        "message": "increase value by 1 vote"
+    })
+
+
+
+}
+
+module.exports.downvote = async (req, res) => {
+
+    const { _id } = req.body;
+
+    const obj = await Hashtag.find({ "_id": _id });
+    await Hashtag.findByIdAndUpdate(_id, { 'vote': parseInt(obj[0].vote) - 1 });
+
+    return res.status(200).json({
+        "message": "decreased value by 1 vote"
+    })
+}
