@@ -12,11 +12,11 @@ const tweetSchema = mongoose.Schema({
     }
 },
     {
-        timestamp: true,
+        timestamps: true,
     })
 
 const Tweet = mongoose.model("Tweet", tweetSchema);
 
-console.log("schema established");
+console.log("Tweet schema established");
 
 module.exports = Tweet;
