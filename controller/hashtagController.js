@@ -1,10 +1,10 @@
 const Hashtag = require("../model/hashtagSchema");
 
 
-module.exports.createTag = (req, res) => {
+module.exports.createTag = async (req, res) => {
     console.log(req.body);
 
-    const hashtag = Hashtag.create({
+    const hashtag = await Hashtag.create({
         "tag": req.body.tag,
         "owner": req.body.owner,
         "definition": req.body.definition
@@ -30,7 +30,7 @@ module.exports.createTag = (req, res) => {
 module.exports.getTag = async (req, res) => {
 
 
-    const tag = await Hashtag.findOne({'tag': req.body.tag});
+    const tag = await Hashtag.findOne({ 'tag': req.body.tag });
     console.log(tag);
     return res.status(200).json({
         "success": "tag found",
