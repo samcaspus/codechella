@@ -18,7 +18,7 @@ const hashtagSchema = mongoose.Schema({
         default: false
     },
     vote: {
-        type: String,
+        type: Number,
         default: 0,
     }
 },

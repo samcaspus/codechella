@@ -30,7 +30,7 @@ module.exports.createTag = async (req, res) => {
 module.exports.getTag = async (req, res) => {
 
 
-    const tag = await Hashtag.find({ 'tag': req.body.tag }).sort("-value");
+    const tag = await Hashtag.find({ 'tag': req.body.tag }).sort({ "vote": -1 });
     console.log(tag);
     if (!tag) {
         return res.status(200).json({
