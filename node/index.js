@@ -7,7 +7,6 @@ const router = express.Router();
 const app = express();
 const port = 8000;
 
-
 app.set("view engine", "ejs");
 app.use(cors());
 app.use(express.urlencoded());
@@ -18,9 +17,9 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
 
+// app.use(express.static(path.join(__dirname, "./view/")))
+// app.use("/", require("./router/"));
 
-app.use("/", require("./router/"));
-app.use(express.static(path.join(__dirname, "./views/")))
 
 
 
