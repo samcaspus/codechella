@@ -15,8 +15,11 @@ const hashtagSchema = mongoose.Schema({
     },
     definition: {
         type: String,
-        required: true,
         default: false
+    },
+    vote: {
+        type: String,
+        default: 0,
     }
 },
     {
