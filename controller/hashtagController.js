@@ -32,11 +32,10 @@ module.exports.getTag = async (req, res) => {
 
     const tag = await Hashtag.findOne({ 'tag': req.body.tag });
     console.log(tag);
-    if(tag)
-    {
+    if (!tag) {
         return res.status(200).json({
             "error": "tag not found"
-        });   
+        });
     }
 
     return res.status(200).json({
