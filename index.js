@@ -1,6 +1,6 @@
 
 const express = require("express");
-// const mongoose = require("./config/mongoose");
+const mongoose = require("./config/mongoose");
 const cors = require("cors");
 const path = require("path");
 const router = express.Router();
