@@ -44,4 +44,7 @@ we built it in a duration of 16 hrs where 13 hrs was spent towards coding everyt
 ## docs:- https://docs.google.com/document/d/1JicMJOr0VbcBcGZhZqlw5jz8mbT3uqLo3VMFQBMcEHI/edit
 ## PPT:- https://docs.google.com/presentation/d/1a9AxF1RwOO73enHWruQBJXl_TBjEHovNrHztUV772R0/edit
 
+### video presentation can be accessed here
+#### https://www.youtube.com/watch?v=sGUhM4DRmWI
+
 
