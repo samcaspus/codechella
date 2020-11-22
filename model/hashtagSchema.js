@@ -21,7 +21,7 @@ const hashtagSchema = mongoose.Schema({
     {
         type: Boolean,
         default: false
-    }
+    },
     vote: {
         type: Number,
         default: 0,
