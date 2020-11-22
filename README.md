@@ -1,5 +1,7 @@
 # codechella
 ### website link : https://tweetcodechella.herokuapp.com/
+### front end repo can be accessed here
+#### https://github.com/Electron-2002/codechella-frontend
 
 ## Inspiration
 Inspiration to build this hack during this hackathon is that many times a hashtags true meaning is not known to individuals. So, what we thought was let's make something which solves the inadequate information issue and provides more information to the user (so that he can make insightful decision) as twitter is a highly influential platform.
@@ -42,5 +44,4 @@ we built it in a duration of 16 hrs where 13 hrs was spent towards coding everyt
 ## docs:- https://docs.google.com/document/d/1JicMJOr0VbcBcGZhZqlw5jz8mbT3uqLo3VMFQBMcEHI/edit
 ## PPT:- https://docs.google.com/presentation/d/1a9AxF1RwOO73enHWruQBJXl_TBjEHovNrHztUV772R0/edit
 
-# front end repo can be accessed here
-## https://github.com/Electron-2002/codechella-frontend
+
