@@ -7,7 +7,8 @@ module.exports.createTag = async (req, res) => {
     const hashtag = await Hashtag.create({
         "tag": req.body.tag,
         "owner": req.body.owner,
-        "definition": req.body.definition
+        "definition": req.body.definition,
+        "socialCause": req.body.socialCause
     })
 
     if (hashtag) {

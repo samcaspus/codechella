@@ -11,12 +11,17 @@ const hashtagSchema = mongoose.Schema({
         // type: mongoose.Schema.Types.ObjectId,
         // ref: 'User'
         type: String,
-        required: true
+        required: true  
     },
     definition: {
         type: String,
         default: false
     },
+    socialCause:
+    {
+        type: Boolean,
+        default: false
+    }
     vote: {
         type: Number,
         default: 0,
