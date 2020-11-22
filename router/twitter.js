@@ -4,10 +4,10 @@ const twitter = require("twitter");
 
 
 const client = new twitter({
-    consumer_key: 'itB8p8e4TVyjhO84O1c0kw5n3',
-    consumer_secret: 'dXzrrPkLmw4bIJW8ZgXtQmc9xZfDYsasWV7kwW0C78IGXwuA16',
-    access_token_key: '1190330868436389888-fTJG3kyv6tPkK4iCIKS6xBczTmikHm',
-    access_token_secret: 'Vs8vlhzBwxpAOT4Y5rXkgbUIvfGnJcc1FdZpHy11g4CmQ'
+    consumer_key: 'Vy54QFRdSRsAvICaTEKOBUS4w',
+    consumer_secret: 'upiH6KHbPAHh83Jnjy9RSPGvhoXasuq0gAYSdxK4H5wjKluoAK',
+    access_token_key: '1175342840-GcV3WvW6TMhYZF4nhSKdeaciOBarWAWwEKZ96cm',
+    access_token_secret: 'u8fiXjHnIa8Hziq3gzTvJfW4kMa6x6G2Tfev2GZ5xLqKU'
 })
 
 const params = { screen_name: 'samcaspus' };
