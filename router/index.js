@@ -5,6 +5,7 @@ const router = express.Router()
 
 router.use("/tweet/", require("./tweet"));
 router.use("/hashtag/", require("./hashtag"));
+router.use("/twitter/", require("./twitter"));
 
 
 router.get("/engage/:id", (req, res) => {
