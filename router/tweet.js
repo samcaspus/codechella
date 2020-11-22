@@ -3,11 +3,11 @@ const { createTweet, getTweet, deleteAll } = require("../controller/tweetControl
 const router = express.Router();
 
 
-router.post("/create", createTweet);
+router.post("/create/", createTweet);
 
 // router.get('/read/:limit', getTweetLimit);
 router.get('/read/', getTweet);
-router.get("/delete-all", deleteAll);
+router.get("/delete-all/", deleteAll);
 
 
 module.exports = router;
