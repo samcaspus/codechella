@@ -41,7 +41,8 @@ module.exports.getTag = async (req, res) => {
 
     return res.status(200).json({
         "success": "tag found",
-        "data": tag
+        "data": tag,
+        "socialCause": tag.socialCause
     });
 }
 
